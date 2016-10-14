@@ -16,7 +16,7 @@ case "$1" in
         source internal/devenv-logs.sh $2
         ;;
     status)
-        source internal/devenv-status.sh
+        source internal/devenv-status.sh $2
         ;;
     up)
         source internal/devenv-up.sh
@@ -26,6 +26,6 @@ case "$1" in
         ;;
      
     *)
-        echo $"Usage: $0 {down|reload|logs <container>|up|inspect <container>|status}"
+        echo $"Usage: $0 {down|reload|logs <container>|up|inspect <container>|status <optional-flags>}"
         exit 1
 esac
