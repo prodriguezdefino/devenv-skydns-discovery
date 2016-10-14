@@ -54,6 +54,9 @@ Next a quick reference for the available commands at this time:
  - `devenv status` => lists all running containers, a `-a` parameter can be added to include stopped containers
  - `devenv logs <container-name|id>` => shows the logs available for the **main process** in the selected container (names and ids can be obtained using `devenv status -a`).
  - `devenv inspect <container-name|id>` => logs in on the container bash terminal, if it was included, helpful to troubleshoot and to review secondary logs, configurations, etc.
+ - `devenv stop <container-name|id>` => stops an specific container.
+ - `devenv remove <container-name|id>` => removes the specific container.
+ - `devenv run <parameters>` => executes docker run with the provided parameters.
 
-  
+
 
